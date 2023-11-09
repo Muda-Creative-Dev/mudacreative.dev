@@ -8,11 +8,11 @@ import Link from 'next/link';
 function Footer() {
     return (
     <>
-        <div className='bg-white bg-footer bg-no-repeat bg-cover'>
-            <div className="flex flex-col md:flex-row justify-center space-x-0 text-center ">
-                <div className="text-center sm:text-left">
+        <div className='bg-white bg-footer bg-no-repeat bg-cover p-10'>
+            <div className="flex flex-col items-center md:flex-row justify-center md:justify-around space-x-0 text-center ">
+                <div className="text-center sm:text-left w-full md:w-[30%]">
                     <h3 className="text-2xl font-poppins font-semibold pb-4">Contact</h3>
-                    <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start space-y-2 sm:space-y-0 sm:space-x-2 hover:text-[#4BBCBF]">
+                    <div className="flex  flex-col sm:flex-row items-center justify-center sm:justify-start space-y-2 sm:space-y-0 sm:space-x-2 hover:text-[#4BBCBF]">
                         <div className="flex items-center">
                             <IoLogoInstagram className="w-6 h-6"/>
                             <p className="font-normal text-sm font-poppins px-2 sm:text-left">mudacreative.Dev</p>
@@ -31,14 +31,14 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className={"w-full w-[30%]"}>
                     <h3 className="text-2xl font-poppins font-semibold pb-4 max-sm:py-4">Head Office</h3>
                     <Link href="#" className='hover:text-[#4BBCBF] font-normal text-sm font-poppins'>Jl. Jaya Raga No. 5, Garut, Jawa Barat</Link>
                 </div>
-                <div>
+                <div className={"w-full md:w-[30%]"}>
                     <h3 class="text-2xl font-poppins font-semibold pb-4 max-sm:py-4">Company</h3>
-                        <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-center space-y-2 sm:space-y-0 sm:space-x-2">
-                            <div class="flex flex-col sm:flex-col items-center sm:items-start">
+                        <div class="flex flex-row items-start justify-center sm:justify-center space-y-2 sm:space-y-0 sm:space-x-2">
+                            <div class="flex flex-col sm:flex-col md:items-center items-start pr-2">
                                 <a href="#" className="text-sm font-normal font-poppins hover:text-[#4BBCBF] ">
                                     Home
                                 </a>
@@ -49,7 +49,7 @@ function Footer() {
                                     Our Service
                                 </a>
                             </div>
-                            <div class="flex flex-col sm:flex-col items-center sm:items-start">
+                            <div class="flex flex-col md:items-center items-start justify-start pl-2">
                                 <a href="#" className="text-sm font-normal font-poppins hover:text-[#4BBCBF] pb-2">
                                     Contact
                                 </a>
@@ -66,7 +66,7 @@ function Footer() {
                 </div>   
                 <p className="text-black font-semibold font-poppins text-base">
                     © 2023 Company Profile by 
-                    <span className="text-black pl-1 hover:text-[#4BBCBF]">
+                    <span className="text-black pl-1 hover:text-[#4BBCBF] hover:cursor-pointer">
                         Muda Creative.dev
                     </span>
                 </p>
