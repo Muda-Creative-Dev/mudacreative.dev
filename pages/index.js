@@ -3,77 +3,67 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import { BsArrowDown } from "react-icons/bs";
 import Image from "next/image";
+import { OutlineButton } from "../components/button";
 function index() {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-white flex ">
-        <Image
-          src="/images/gradien.png"
-          alt=""
-          width={1400}
-          height={1000}
-          className="absolute"
-        />
+      <div className="h-[80%] md:h-screen bg-white flex bg-home bg-no-repeat bg-cover">
         <Image
           src="/images/poto.png"
           alt=""
           width={730}
           height={550}
-          className="absolute right-0 pt-[93px] items-end justify-end"
+          className="hidden md:block absolute right-0 pt-[93px] items-end justify-end"
         />
-        <div className="pt-[130px] pl-[75px] font-poppins">
-          <h1 className="text-[64px] font-bold ">We solve problems</h1>
-          <h1 className="text-[64px] font-bold ">With code. </h1>
-          <div className="leading-3 font-normal">
-            <p className="text-sm my-2">
-              Muda creative have an important role in solving{" "}
-            </p>
-            <p className="text-sm my-2">
-              environmental problems with technology. They have the{" "}
-            </p>
-            <p className="text-sm my-2">
-              creativity and skills to develop innovative solutions that can
-            </p>
-            <p className="text-sm my-2 pb-[37px]">
-              {" "}
-              help protect the environment
-            </p>
-          </div>
-          <button className="rounded-lg p-1 border border-black  ">
-            Lets collebboration
-          </button>
+        <div className="w-full py-20 px-5 md:w-[80%] mx-auto flex flex-col items-center md:items-start font-poppins z-10 ">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl text-center md:text-left  font-bold w-full md:w-[60%] leading-tight">
+            We solve problems With code.
+          </h1>
+          <p className="text-sm font-semibold md:justify-start md:text-xl w-full md:w-[50%] pt-5 pb-20 text-center md:text-left">
+            Muda creative{" "}
+            <span className="font-normal">
+              have an important role in solving environmental problems with
+              technology. They have the creativity and skills to develop
+              innovative solutions that can help protect the environment
+            </span>
+          </p>
+          <OutlineButton title={"Let's Collaboration"} />
         </div>
       </div>
-      <div className="h-screen w-full bg-white">
-        <h1 className="text-[#4BBCBF] text-[36px] text-center">About</h1>
-        <div className="flex pl-[91px] pr-[111px] gap-[41px] pt-[65px]">
-          <div>
+      <div className="h-screen bg-white mt-10 font-poppins w-full ">
+        <h1 className="text-2xl md:text-4xl font-semibold text-center">
+          About
+        </h1>
+        <div className="flex flex-col md:justify-between md:flex-row md:px-[350px] pt-16">
+          <div className="mb-8 md:mb-0">
             <Image
-              src="/images/poto-about.png"
-              alt=""
-              width={511}
-              height={341}
+              className="rounded-xl md:rounded-tr-[100px] "
+              src="/images/about.png"
+              alt="photos about"
+              width={580}
+              height={400}
             />
           </div>
-          <div className="w-[526px] h-[341px] text-justify">
-            <p className="pb-[20px]">
-              Muda Creative is a software house technology that focuses on
-              developing technology products and services for various needs,
-              both business and personal. Muda Creative has a team consisting of
-              young people and experienced people in the technology field, who
-              are dedicated to creating innovative and useful technology
-              solutions.
+          <div className="w-full md:w-[526px] h-[341px] md:items-end pr-8">
+            <p className="text-base font-semibold md:justify-start md:text-2xl w-full pb-5 text-justify">
+              Muda creative
+              <span className="font-normal pl-2">
+                is a software house technology that focuses on developing
+                technology products and services for various needs, both
+                business and personal. Muda Creative has a team consisting of
+                young people and experienced people in the technology field, who
+                are dedicated to creating innovative and useful technology
+                solutions.
+              </span>
             </p>
-            <button className="rounded-lg p-1 border border-black  ">
-              Lets collebboration
-            </button>
+            <OutlineButton title={"Let's Collaboration"} />
           </div>
         </div>
       </div>
       <div>
         <h1 className="text-[36px] font-semibold text-center bg-white">
-          OUR SERVICE
+          Our Service
         </h1>
         <div className="flex px-[111px] gap-[27px] bg-white">
           <div>
@@ -120,12 +110,7 @@ function index() {
             Let's discuss what projects you have in mind
           </p>
         </div>
-        <button className="flex items-center font-poppins font-medium text-sm py-2 my-5 md:text-lg border-2 rounded-lg border-[#414141] text-[#414141] px-4 md:h-14 hover:bg-primary hover:text-[#ffffff] transition duration-500">
-          Let’s Discuss
-          <div className="pl-6 ">
-            <BsArrowDown />
-          </div>
-        </button>
+        <OutlineButton title={"Let's discuss"} icon={<BsArrowDown />} />
       </div>
       <div class=" w-full p-10 min-h-screen flex items-center justify-center">
         <div class="text-start w-full md:w-[70%] lg:w-[50%]">
@@ -174,7 +159,7 @@ function index() {
           <div class="flex py-9 justify-end">
             <button
               type="submit"
-              className="w-full md:w-[208px] h-[45px] rounded-xl text-white font-poppins font-medium text-md md:text-xl bg-[#4BBCBF] hover:bg-[#2a6e70] hover:text-[#ffffff]"
+              className="w-full md:w-[208px] h-[45px] rounded-xl text-white font-poppins font-medium text-md md:text-xl bg-[#4BBCBF] hover:bg-[#2a6e70] hover:text-[#ffffff] transition duration-500"
             >
               Send
             </button>

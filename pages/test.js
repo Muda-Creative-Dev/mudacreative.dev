@@ -2,7 +2,7 @@ import React from "react";
 
 function test() {
   return (
-    <div class="p-4">
+    <div class="p-4 bg-home bg-no-repeat bg-cover">
       <h3 class="text-lg font-semibold">Company</h3>
       <div class="flex gap-10">
         <div>
